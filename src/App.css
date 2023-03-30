@@ -36,3 +36,159 @@
     transform: rotate(360deg);
   }
 }
+.icons{
+  font-size:60px
+}
+.social{
+  font-size: 40px;
+}
+
+.topcontainer{
+  
+  height:100vh;
+  
+}
+
+.nav-link{
+  color:black;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+
+.navigation-menu {
+  margin-left: auto;
+  display:flex;
+  align-items: center;
+  justify-content:space-evenly;
+  flex:1;
+  position:relative;
+}
+
+.no-bullets ul{
+  list-style-type: none;
+  margin-left:5px;
+}
+
+.no-bullets li:hover{
+  background-color: #eee;
+  color:#FF8624;
+}
+
+.navigation-menu ul {
+  display: flex;
+  padding: 0;
+}
+.navigation-menu li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+
+.navigation-menu li:hover {
+  color:#FF8624;
+}
+
+.navigation-menu li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+
+.pic {
+  display:flex;
+  position:absolute;
+  -webkit-animation: fade 20s infinite ease-in-out;
+  animation: fade 20s infinite ease-in-out;
+}
+
+#pic1 {
+  animation-delay: 5s;
+}
+#pic2 {
+  animation-delay: 10s;
+}
+#pic3 {
+  animation-delay: 15s;
+}
+#pic4 {
+  animation-delay: 20s;
+}
+
+@-webkit-keyframes fade {
+  0% {opacity: 1;}
+  15% {opacity: 1;}
+  25% {opacity: 0;}
+  90% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fade {
+  0% {opacity: 1;}
+  15% {opacity: 1;}
+  25% {opacity: 0;}
+  90% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+  transform: translateY(-50%);
+  align-items:center;
+  justify-content:center;
+  margin-left:auto;
+}
+.menu-appear{
+  display:none;
+ }
+
+@media screen and (max-width: 482px) {
+  .hamburger {
+    display: block;
+    flex-direction: column;
+    display:flex;
+    width: 100%;
+    align-items:center;
+    justify-content:center;
+    margin-top:10px;
+  }
+  .menu-appear {
+    width: 95vw;
+    display:block;
+    background-color:whitesmoke; 
+    text-align: left; 
+    padding: 3px;
+    
+    
+  }
+  .navigation-menu {
+    display: none;
+  }
+
+  .navigation-menu ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid black;
+    
+  }
+  .navigation-menu li {
+    text-align: center;
+    margin: 0;
+    
+  }
+  .navigation-menu li a {
+    color: black;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+  .navigation-menu li:hover {
+    background-color: #eee;
+  }
+}
+
