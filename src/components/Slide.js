@@ -23,7 +23,7 @@ const Wrapper =styled.div`
     display:flex;
     justify-content:space-around;
     align-items:center;
-    padding:60px 30px 0px 30px;
+    padding:30px 30px 0px 30px;
     flex-wrap:wrap;
 `
 
@@ -121,6 +121,7 @@ const Slide = ()=>{
     return (
         <div >
             <TopContainer >
+                <h4 style={{textAlign:'center'}}>Do business with us</h4>
                 <div>
             <Wrapper>
                     <Box>

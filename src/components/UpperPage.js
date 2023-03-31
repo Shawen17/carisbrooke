@@ -44,6 +44,7 @@ const Desc = styled.p`
 const Image = styled.img`
     height:100%;
     width:100%;
+    
     `
 
 
@@ -53,15 +54,19 @@ const ImgContainer = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
-    padding:5px;
+    flex-direction:column;
+    padding:10px;
     
 `
 const InfoContainer = styled.div`
     flex:30%;
-    height:100%;
+    height:25%;
     width:100%;
     padding:15px;
     display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
 `
 
 const Title = styled.p`
@@ -72,11 +77,12 @@ const Title = styled.p`
 `
 
 const Slide = styled.div`
-    width: 100vw;
-    height:100vh;
+    width: 95vw;
+    height:85vh;
     display: flex;
     flex-direction:column;
     align-items: flex-start;
+    justify-content:center;
     flex-wrap:wrap;
     
     
@@ -125,36 +131,36 @@ const UpperPage=()=>{
         <Container>
             <Wrapper>
                 <Slide className='pic' id='pic4' >
-                    <InfoContainer>
-                        <Desc><em>we offer competitive rates you can't beat</em></Desc>
-                    </InfoContainer>
                     <ImgContainer>
                         <Image src='/homeimage2.jpg' alt='slide'/>
                     </ImgContainer>
+                    <InfoContainer>
+                        
+                    </InfoContainer>
                 </Slide>
                 <Slide className='pic' id='pic3'>
-                    <InfoContainer>
-                        <Desc><em>Large volume offshore transfer? we got you covered</em></Desc>
-                    </InfoContainer>
                     <ImgContainer>
                         <Image src='/homeimage2.jpg' alt='slide' />
                     </ImgContainer>
+                    <InfoContainer>
+                        
+                    </InfoContainer>
                 </Slide>
                 <Slide className='pic' id='pic2'>
-                    <InfoContainer>
-                        <Desc><em>any foreign currency you need, we provide</em></Desc>
-                    </InfoContainer>
                     <ImgContainer>
                         <Image src='/homeimage2.jpg' alt='slide' />
                     </ImgContainer>
+                    <InfoContainer>
+                        
+                    </InfoContainer>
                 </Slide>
                 <Slide className='pic' id='pic1'>
-                    <InfoContainer>
-                        <Desc><em>track record that span to over 5 years, we can trust us to deliver</em></Desc>
-                    </InfoContainer>
                     <ImgContainer>
                         <Image src='/homeimage3.jpg' alt='slide' />
                     </ImgContainer>
+                    <InfoContainer>
+                        
+                    </InfoContainer>
                 </Slide>
                 
             </Wrapper>
