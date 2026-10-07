@@ -3,9 +3,7 @@ import styled from "styled-components";
 import MailIcon from "@mui/icons-material/Mail";
 import PhoneIcon from "@mui/icons-material/Phone";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import Footer from "./Footer";
 
 const TopContainer = styled.div`
   height: 100px;
@@ -59,40 +57,6 @@ const Subtitle = styled.p`
   color: grey;
 `;
 
-const Footer = styled.div`
-  padding-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex: 50%;
-
-  @media screen and (max-width: 1145px) {
-    color: white;
-  }
-`;
-
-const SocialIcon = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  cursor: pointer;
-`;
-
-const Desc = styled.p`
-  font-size: 18px;
-  font-weight: 500px;
-  color: #ff8624;
-
-  @media screen and (max-width: 482px) {
-    font-size: 12px;
-
-    ${SocialIcon} {
-      color: black;
-    }
-  }
-`;
-
 const Slide = () => {
   return (
     <div>
@@ -129,20 +93,7 @@ const Slide = () => {
               Donation: <Subtitle> donation@wecarecentre.ca</Subtitle>
             </Box>
           </Wrapper>
-          <Footer>
-            <h1>Get in touch</h1>
-            <Desc>
-              <em>
-                YOU CAN COUNT ON US TO SUPPORT IMMIGRANTS AND REFUGEES WITHIN
-                OUR COMMUNITIES{" "}
-              </em>
-            </Desc>
-            <SocialIcon>
-              <FacebookOutlinedIcon style={{ fontSize: 30 }} />
-              <TwitterIcon style={{ fontSize: 30 }} />
-              <InstagramIcon style={{ fontSize: 30 }} />
-            </SocialIcon>
-          </Footer>
+          <Footer />
         </div>
       </TopContainer>
       <div className="topcontainer"></div>

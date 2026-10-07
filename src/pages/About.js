@@ -2,6 +2,7 @@ import React from "react";
 import ServiceBox from "../components/ServiceBox";
 import styled from "styled-components";
 import { useEffect } from "react";
+import Footer from "../components/Footer";
 
 const Container = styled.div`
   background: rgba(0, 0, 0, 0.12);
@@ -109,6 +110,7 @@ const About = () => {
           />
         </div>
       </Container>
+      <Footer />
     </div>
   );
 };
