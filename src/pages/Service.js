@@ -2,6 +2,7 @@ import React from "react";
 import { Header, Sub } from "./About";
 import { Title } from "../components/ServiceBox";
 import styled from "styled-components";
+import Footer from "../components/Footer";
 
 const ServiceContainer = styled.div`
   display: flex;
@@ -68,6 +69,7 @@ const Service = () => {
           </Desc>
         </SubContainer>
       </ServiceContainer>
+      <Footer />
     </div>
   );
 };
