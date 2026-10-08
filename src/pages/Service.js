@@ -8,7 +8,20 @@ const ServiceContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+const SubContainer = styled.div`
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Desc = styled.div`
@@ -19,6 +32,7 @@ const Desc = styled.div`
   border-radius: 10px;
   box-shadow: 0 4px 10px gray;
   margin: 5px;
+  box-sizing: border-box;
 `;
 
 const Service = () => {
@@ -29,7 +43,7 @@ const Service = () => {
         <Sub>our range of services</Sub>
       </Header>
       <ServiceContainer>
-        <div style={{ display: "flex", width: "50%", flexDirection: "column" }}>
+        <SubContainer>
           <Title>OUR GOAL</Title>
           <Desc>
             Our goal is to work with underserved communities so that they can
@@ -40,8 +54,8 @@ const Service = () => {
             empowered, and have a sense of belonging, we all gain from a
             stronger community!
           </Desc>
-        </div>
-        <div style={{ display: "flex", width: "50%", flexDirection: "column" }}>
+        </SubContainer>
+        <SubContainer>
           <Title>WHO WE ARE?</Title>
           <Desc>
             WeCare Centre is an arm of Healing Stream Centre, a non-profit
@@ -52,7 +66,7 @@ const Service = () => {
             to better support the development of the most vulnerable within our
             society.
           </Desc>
-        </div>
+        </SubContainer>
       </ServiceContainer>
     </div>
   );
