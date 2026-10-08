@@ -20,7 +20,7 @@ const Bottom = styled.div`
   padding: 10px;
 `;
 
-const Title = styled.h4`
+export const Title = styled.h4`
   display: flex;
   align-items: center;
   justify-content: center;
